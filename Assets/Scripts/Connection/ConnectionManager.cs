@@ -77,8 +77,6 @@ public class ConnectionManager : NetworkBehaviour
         {
             instance.StartCoroutine(instance.LoadLevel("Scenes/TableLevel"));
         }
-
-        print(eventType.ToString());
     }
 
     public static void StartClient(string ip, ushort port)

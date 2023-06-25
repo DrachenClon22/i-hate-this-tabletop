@@ -51,42 +51,9 @@ MonoBehaviour:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 8668177248139500608}
     PlayerPrefab: {fileID: 6463796144767775058, guid: f4956d17723761c4d9f5e9cc224f4908, type: 3}
-    NetworkPrefabs:
-    - Override: 0
-      Prefab: {fileID: 8742569625471330086, guid: 99b7dae9fadb81747996d19854b92e52, type: 3}
-      SourcePrefabToOverride: {fileID: 0}
-      SourceHashToOverride: 0
-      OverridingTargetPrefab: {fileID: 0}
-    - Override: 0
-      Prefab: {fileID: 3572928450414267615, guid: 89dd15f85b4839445a144c695c8deff6, type: 3}
-      SourcePrefabToOverride: {fileID: 0}
-      SourceHashToOverride: 0
-      OverridingTargetPrefab: {fileID: 0}
-    - Override: 0
-      Prefab: {fileID: 4737082068307812385, guid: 8e6fcf0175b86e84b989a2573cadb415, type: 3}
-      SourcePrefabToOverride: {fileID: 0}
-      SourceHashToOverride: 0
-      OverridingTargetPrefab: {fileID: 0}
-    - Override: 0
-      Prefab: {fileID: 2398921376015039794, guid: f6eec1c626ae6d341b3e39e1932f97e1, type: 3}
-      SourcePrefabToOverride: {fileID: 0}
-      SourceHashToOverride: 0
-      OverridingTargetPrefab: {fileID: 0}
-    - Override: 0
-      Prefab: {fileID: 3014756535359949495, guid: f9e6d1e181bff724a971277b3487fc6c, type: 3}
-      SourcePrefabToOverride: {fileID: 0}
-      SourceHashToOverride: 0
-      OverridingTargetPrefab: {fileID: 0}
-    - Override: 0
-      Prefab: {fileID: 2225451540983333513, guid: 2ed4f6af2836d2c4387371e8d481fc18, type: 3}
-      SourcePrefabToOverride: {fileID: 0}
-      SourceHashToOverride: 0
-      OverridingTargetPrefab: {fileID: 0}
-    - Override: 0
-      Prefab: {fileID: 2121689159652507590, guid: a3731ba8a556d9e45bbba4b282803843, type: 3}
-      SourcePrefabToOverride: {fileID: 0}
-      SourceHashToOverride: 0
-      OverridingTargetPrefab: {fileID: 0}
+    Prefabs:
+      NetworkPrefabsLists:
+      - {fileID: 11400000, guid: 0ee8a0529fce70146a0c5552db79263f, type: 2}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -102,6 +69,7 @@ MonoBehaviour:
     LoadSceneTimeOut: 120
     SpawnTimeout: 1
     EnableNetworkLogs: 1
+    OldPrefabList: []
 --- !u!114 &8668177248139500608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +92,7 @@ MonoBehaviour:
   ConnectionData:
     Address: 127.0.0.1
     Port: 7777
-    ServerListenAddress: 
+    ServerListenAddress: 127.0.0.1
   DebugSimulator:
     PacketDelayMS: 0
     PacketJitterMS: 0

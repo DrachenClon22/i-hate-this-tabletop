@@ -129,6 +129,7 @@ public class DragDropHandler : NetworkBehaviour
         // Offset.y = object lowest model mesh position
         if (draggingObject)
         {
+            Debug.Log(Camera.main.name);
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo))
             {
                 clickPositionOffset = hitInfo.point - draggingObject.position;
