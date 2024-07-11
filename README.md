@@ -1,6 +1,6 @@
 # i-hate-this-tabletop
  
-Version: 1.0.0-alpha
+Version: 1.0.0-alpha<br>
 This abandoned project was supposed to be some sort of a table for dnd like games with friends online
 
 Features:
